@@ -24,14 +24,14 @@ function Header() {
                 <Image src={space} width={50} height={50} layout="fixed"/>
                 <div className="flex ml-4 items-center rounded-full bg-gray-100 p-2">
                     <SearchIcon className="h-6 text-gray-400"/>
-                    <input type="text" placeholder="Search" className="flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink"/>
+                    <input type="text" placeholder="Search" className="hidden md:inline-flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink"/>
                 </div>
             </div>
 
             {/* Center*/}
             <div className="flex justify-center flex-grow">
                 <div className="flex space-x-6 md:space-x-2">
-                    <HeaderIcon Icon={HomeIcon} />
+                    <HeaderIcon active Icon={HomeIcon} />
                     <HeaderIcon Icon={FlagIcon} />
                     <HeaderIcon Icon={PlayIcon} />
                     <HeaderIcon Icon={ShoppingCartIcon} />
@@ -39,6 +39,14 @@ function Header() {
                 </div>
             </div>
             {/* Right */}
+            <div className="flex items-center sm:space-x-2 justify-end">
+                
+                <p className="whitespace-nowrap font-semibold pr-3 text-red-500 italic">Arecio Canton</p>
+                <ViewGridIcon className="icon"/>
+                <ChatIcon className="icon"/>
+                <BellIcon className="icon"/>
+                <ChevronDownIcon className="icon"/>
+            </div>
         </div>
     )
 }
