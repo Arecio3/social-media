@@ -68,8 +68,8 @@ function InputBox() {
                 <Image
                     className="rounded-full"
                     src={session.user.image}
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                     layout="fixed"
                 />
                 <form className="flex flex-1">
@@ -83,7 +83,7 @@ function InputBox() {
 
                 {imageToPost && (
                     <div onClick={removeImage} className="flex flex-col filter hover:brightness-110 transition duration-150 transform hover:scale-105 cursor-pointer">
-                        <Image src={imageToPost} height={30} width={10} className="h-10 object-contain" />
+                        <Image src={imageToPost} height={20} width={20} className="h-10 object-contain" />
                         <p className="text-xs text-red-500 text-center">Remove</p>
                     </div>
                 )}
