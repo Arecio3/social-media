@@ -68,8 +68,8 @@ function InputBox() {
                 <Image
                     className="rounded-full"
                     src={session.user.image}
-                    width={30}
-                    height={30}
+                    width={40}
+                    height={40}
                     layout="fixed"
                 />
                 <form className="flex flex-1">
